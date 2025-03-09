@@ -1,0 +1,85 @@
+/* ตั้งค่าฟอนต์และสีพื้นหลัง */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f0b9e5, #f665a9);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* กล่องแสดงผล */
+.container {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* ปรับสไตล์ Input และปุ่ม */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+button {
+    background: #b8eccc;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #f9c2eb;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ปรับแต่งผลลัพธ์ */
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* ไอคอนสภาพอากาศ */
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+/* สไตล์ของ Loading Spinner */
+.loading {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+/* Animation ของ Spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
